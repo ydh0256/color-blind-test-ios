@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  ColorBlindTest
+//  HumanSenceTest
 //
-//  Created by Yoo Duckhyun on 2017. 6. 2..
-//  Copyright © 2017년 DuckKite. All rights reserved.
+//  Created by Yoo Duckhyun on 2017. 5. 22..
+//  Copyright © 2017년 Yoo Duckhyun. All rights reserved.
 //
 
 import UIKit

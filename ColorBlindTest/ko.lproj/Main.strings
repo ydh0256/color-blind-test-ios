@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Color blind test"; ObjectID = "1Rc-rg-3rr"; */
+"1Rc-rg-3rr.normalTitle" = "색맹 검사";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "1qw-IV-cpR"; */
+"1qw-IV-cpR.title" = "닫기";
+
+/* Class = "UIButton"; normalTitle = "Infinite game"; ObjectID = "EbS-eP-P5X"; */
+"EbS-eP-P5X.normalTitle" = "무제한 게임모드";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "IjW-S2-GHb"; */
+"IjW-S2-GHb.title" = "Title";
+
+/* Class = "UIButton"; normalTitle = "60sec game"; ObjectID = "Jgc-cP-Ukr"; */
+"Jgc-cP-Ukr.normalTitle" = "60초 게임모드";

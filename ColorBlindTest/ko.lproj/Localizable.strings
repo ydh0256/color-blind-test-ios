@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  HumanSenceTest
+
+  Created by Yoo Duckhyun on 2017. 5. 25..
+  Copyright © 2017년 Yoo Duckhyun. All rights reserved.
+*/
+
+
+"Infinite Mode" = "무한 모드";
+"Click on a square with a different color." = "나열된 사각형에서 색이 다른 하나를 선택하세요!!";
+
+"60sec Mode" = "60초 모드";
+"Click on a square with a different color for 60 seconds." = "60초 동안 색이 다른 하나를 선택하세요";
+
+"Color blind Test" = "색맹 테스트";
+
+"Congratulations!!" = "축하합니다.!!";
+"You have updated your record." = "최고기록을 갱신하셨어요~~";
