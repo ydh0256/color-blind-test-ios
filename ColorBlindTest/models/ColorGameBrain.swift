@@ -9,11 +9,16 @@
 import Foundation
 
 class ColorGameBrain {
+    
+    // 현재 스테이지 
+    // 현재 스테이지가 바뀔때마다 난이도를 설정
     var curStage: Int {
         didSet {
             curDifficult = getDifficult(stage: self.curStage)
         }
     }
+    // size 게임의 n * n 사이즈 값
+    // 바뀔하나의 타일의 색차이 값이 낮을수록 난이도가 높아짐
     var gameValue: (size: Int, distance: Int)
     private var curDifficult: Difficult! {
         didSet{

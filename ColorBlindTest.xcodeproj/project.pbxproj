@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		23D3CB6F4433DCABC96E2D53 /* Pods_ColorBlindTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217383DC45FB2D748692F76 /* Pods_ColorBlindTest.framework */; };
+		4F3375FB1EE8F9DF004FA2E5 /* colorblindimage in Resources */ = {isa = PBXBuildFile; fileRef = 4F3375FA1EE8F9DF004FA2E5 /* colorblindimage */; };
+		4F3375FD1EEA2CD8004FA2E5 /* ColorBlindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3375FC1EEA2CD8004FA2E5 /* ColorBlindViewController.swift */; };
+		4F3375FF1EEA4713004FA2E5 /* ColorBlindTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3375FE1EEA4713004FA2E5 /* ColorBlindTestModel.swift */; };
 		8C018A2C1EE123FB00769384 /* ColorGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C018A2A1EE123FB00769384 /* ColorGameController.swift */; };
 		8C018A2D1EE123FB00769384 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C018A2B1EE123FB00769384 /* MainController.swift */; };
 		8C018A301EE1243300769384 /* ColorGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C018A2F1EE1243300769384 /* ColorGameCell.swift */; };
@@ -52,6 +55,9 @@
 		07DE533369FB6FD264F4F2E9 /* Pods-ColorBlindTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorBlindTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorBlindTestTests/Pods-ColorBlindTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		391D35DC37AD8544B719C7E0 /* Pods-ColorBlindTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorBlindTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorBlindTest/Pods-ColorBlindTest.release.xcconfig"; sourceTree = "<group>"; };
 		4217383DC45FB2D748692F76 /* Pods_ColorBlindTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorBlindTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3375FA1EE8F9DF004FA2E5 /* colorblindimage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = colorblindimage; sourceTree = "<group>"; };
+		4F3375FC1EEA2CD8004FA2E5 /* ColorBlindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlindViewController.swift; sourceTree = "<group>"; };
+		4F3375FE1EEA4713004FA2E5 /* ColorBlindTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlindTestModel.swift; sourceTree = "<group>"; };
 		67DB7CFB54EC7C23E8CEC11D /* Pods-ColorBlindTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorBlindTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorBlindTestUITests/Pods-ColorBlindTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C6E6DE70DDEC78569A53B6F /* Pods-ColorBlindTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorBlindTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorBlindTest/Pods-ColorBlindTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8C018A2A1EE123FB00769384 /* ColorGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGameController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 			children = (
 				8C018A2A1EE123FB00769384 /* ColorGameController.swift */,
 				8C018A2B1EE123FB00769384 /* MainController.swift */,
+				4F3375FC1EEA2CD8004FA2E5 /* ColorBlindViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				8C018A381EE1310C00769384 /* ColorGameBrain.swift */,
+				4F3375FE1EEA4713004FA2E5 /* ColorBlindTestModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 		8CF1D08F1EE1023A00DD39F1 /* ColorBlindTest */ = {
 			isa = PBXGroup;
 			children = (
+				4F3375FA1EE8F9DF004FA2E5 /* colorblindimage */,
 				8C018A4F1EE14B9300769384 /* lottie */,
 				8C018A371EE1310C00769384 /* models */,
 				8C018A291EE123FB00769384 /* controller */,
@@ -315,7 +324,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = DuckKite;
 				TargetAttributes = {
 					8CF1D08C1EE1023A00DD39F1 = {
@@ -369,6 +378,7 @@
 				8C018A561EE14B9300769384 /* clock.json in Resources */,
 				8C018A581EE14B9300769384 /* moving_eye.json in Resources */,
 				8C018A591EE14B9300769384 /* play_and_like_it.json in Resources */,
+				4F3375FB1EE8F9DF004FA2E5 /* colorblindimage in Resources */,
 				8C018A571EE14B9300769384 /* infinite_rainbow.json in Resources */,
 				8CF1D0961EE1023A00DD39F1 /* Main.storyboard in Resources */,
 				8C018A5A1EE14B9300769384 /* play_button.json in Resources */,
@@ -420,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9CE9C72959BE354E560CB181 /* [CP] Copy Pods Resources */ = {
@@ -495,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BADE475F53B387FA3A04823A /* [CP] Copy Pods Resources */ = {
@@ -525,7 +535,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -535,10 +545,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3375FD1EEA2CD8004FA2E5 /* ColorBlindViewController.swift in Sources */,
 				8C018A2D1EE123FB00769384 /* MainController.swift in Sources */,
 				8C018A391EE1310C00769384 /* ColorGameBrain.swift in Sources */,
 				8C018A341EE12A8900769384 /* AppInfo.swift in Sources */,
 				8C018A301EE1243300769384 /* ColorGameCell.swift in Sources */,
+				4F3375FF1EEA4713004FA2E5 /* ColorBlindTestModel.swift in Sources */,
 				8C018A351EE12A8900769384 /* UIUtils.swift in Sources */,
 				8CF1D0911EE1023A00DD39F1 /* AppDelegate.swift in Sources */,
 				8C018A2C1EE123FB00769384 /* ColorGameController.swift in Sources */,
@@ -610,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -660,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
