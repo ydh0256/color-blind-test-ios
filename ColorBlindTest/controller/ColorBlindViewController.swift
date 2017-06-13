@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SCLAlertView
 
-class ColorBlindViewController: UIViewController {
+class ColorBlindViewController: UIViewController, TestState {
 
     
     
@@ -16,20 +17,13 @@ class ColorBlindViewController: UIViewController {
     @IBOutlet weak var step: UILabel!
     @IBOutlet weak var stepProgress: UIProgressView!
     
+    var colorBlindTestModel: ColorBlindTestModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        colorBlindImage.image = UIImage(named: "colorblindimage/img_01_00.png")
-        
-        let filemanager:FileManager = FileManager()
-        
-        print(NSTemporaryDirectory() + "colorblindimage")
-        
-        let files = filemanager.enumerator(atPath: NSTemporaryDirectory() + "colorblindimage")
-        for filename in files!
-        {
-           print(filename)
-        }
+    
+        colorBlindTestModel = ColorBlindTestModel(self)
+        colorBlindTestModel.prepare()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +31,24 @@ class ColorBlindViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    public func setUI() {
+        colorBlindImage.image = UIImage(named: colorBlindTestModel.testImage!)
+        stepProgress.progress = colorBlindTestModel.getProgress()
+        step.text = String(colorBlindTestModel.curStep) + "/" + String(colorBlindTestModel.MAX_STEP)
+    }
+    public func finishTest() {
+        SCLAlertView().showSuccess(String(colorBlindTestModel.corectAnswer) + "/" + String(colorBlindTestModel.MAX_STEP), subTitle: NSLocalizedString("It is your record.", comment: ""))
+        colorBlindTestModel.prepare()
+    }
+    
+    @IBAction func numberClick(_ sender: UIButton) {
+        colorBlindTestModel.hitNumber(sender.tag)
+    }
 
+    @IBAction func backToMain(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil);
+    }
     /*
     // MARK: - Navigation
 
