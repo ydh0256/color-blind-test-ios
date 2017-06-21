@@ -6,6 +6,8 @@ target 'ColorBlindTest' do
   use_frameworks!
   pod 'lottie-ios'
   pod 'SCLAlertView'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 
   # Pods for ColorBlindTest
 

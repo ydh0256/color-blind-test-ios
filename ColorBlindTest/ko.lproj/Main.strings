@@ -1,4 +1,7 @@
 
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "0o1-xk-yyA"; */
+"0o1-xk-yyA.normalTitle" = "6";
+
 /* Class = "UIButton"; normalTitle = "Color blind test"; ObjectID = "1Rc-rg-3rr"; */
 "1Rc-rg-3rr.normalTitle" = "색맹 검사";
 
@@ -13,3 +16,49 @@
 
 /* Class = "UIButton"; normalTitle = "60sec game"; ObjectID = "Jgc-cP-Ukr"; */
 "Jgc-cP-Ukr.normalTitle" = "60초 게임모드";
+
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "7on-JL-mG0"; */
+"7on-JL-mG0.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "Ggl-xj-fhD"; */
+"Ggl-xj-fhD.normalTitle" = "3";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "IjW-S2-GHb"; */
+"IjW-S2-GHb.title" = "Title";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "Nrf-qS-cFN"; */
+"Nrf-qS-cFN.normalTitle" = "7";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "NvC-qh-8Bo"; */
+"NvC-qh-8Bo.normalTitle" = "4";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "PCh-bv-15y"; */
+"PCh-bv-15y.normalTitle" = "0";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SAg-V0-Lme"; */
+"SAg-V0-Lme.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "jiw-Sk-wcV"; */
+"jiw-Sk-wcV.normalTitle" = "2";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "lcH-K5-f0w"; */
+"lcH-K5-f0w.normalTitle" = "9";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "q5t-3S-k5W"; */
+"q5t-3S-k5W.normalTitle" = "5";
+
+/* Class = "UIBarButtonItem"; title = "close"; ObjectID = "qLq-j9-F1a"; */
+"qLq-j9-F1a.title" = "닫기";
+
+/* Class = "UINavigationItem"; title = "Color blind test"; ObjectID = "z6N-s1-bnR"; */
+"z6N-s1-bnR.title" = "색맹 검사";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "zHB-kt-qhp"; */
+"zHB-kt-qhp.normalTitle" = "8";
+
+
+
+
+
+

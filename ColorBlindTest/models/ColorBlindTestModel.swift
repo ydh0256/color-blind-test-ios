@@ -31,7 +31,6 @@ class ColorBlindTestModel {
         for imageName in imageArray! {
             var temp = imageName.lastPathComponent.components(separatedBy: "_")
             if temp.count == 3, let value = Int(temp[1]){
-                print( String(value) + " : " + imageName.lastPathComponent)
                 baseContainer.updateValue(value, forKey: imageName.lastPathComponent)
             }
         }

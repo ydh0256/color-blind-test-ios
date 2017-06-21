@@ -24,6 +24,8 @@
 		8C018A591EE14B9300769384 /* play_and_like_it.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C018A531EE14B9300769384 /* play_and_like_it.json */; };
 		8C018A5A1EE14B9300769384 /* play_button.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C018A541EE14B9300769384 /* play_button.json */; };
 		8C018A5B1EE14B9300769384 /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C018A551EE14B9300769384 /* refresh.json */; };
+		8C50A4FC1EF91B5700706869 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C50A4FE1EF91B5700706869 /* InfoPlist.strings */; };
+		8C6D1B141EF7BBD500DCACF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C6D1B131EF7BBD500DCACF1 /* GoogleService-Info.plist */; };
 		8CF1D0911EE1023A00DD39F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1D0901EE1023A00DD39F1 /* AppDelegate.swift */; };
 		8CF1D0961EE1023A00DD39F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1D0941EE1023A00DD39F1 /* Main.storyboard */; };
 		8CF1D0981EE1023A00DD39F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1D0971EE1023A00DD39F1 /* Assets.xcassets */; };
@@ -65,7 +67,6 @@
 		8C018A2F1EE1243300769384 /* ColorGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGameCell.swift; sourceTree = "<group>"; };
 		8C018A321EE12A8900769384 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		8C018A331EE12A8900769384 /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
-		8C018A361EE1307F00769384 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		8C018A381EE1310C00769384 /* ColorGameBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGameBrain.swift; sourceTree = "<group>"; };
 		8C018A3B1EE140EA00769384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C018A3F1EE140F700769384 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -75,6 +76,10 @@
 		8C018A531EE14B9300769384 /* play_and_like_it.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = play_and_like_it.json; sourceTree = "<group>"; };
 		8C018A541EE14B9300769384 /* play_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = play_button.json; sourceTree = "<group>"; };
 		8C018A551EE14B9300769384 /* refresh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
+		8C50A4FD1EF91B5700706869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C50A4FF1EF91B5B00706869 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C6D1B131EF7BBD500DCACF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8CA14CB71EFA0C4100638AEC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		8CF1D08D1EE1023A00DD39F1 /* ColorBlindTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBlindTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF1D0901EE1023A00DD39F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF1D0951EE1023A00DD39F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,6 +225,8 @@
 				8CF1D0971EE1023A00DD39F1 /* Assets.xcassets */,
 				8CF1D0991EE1023A00DD39F1 /* LaunchScreen.storyboard */,
 				8CF1D09C1EE1023A00DD39F1 /* Info.plist */,
+				8C6D1B131EF7BBD500DCACF1 /* GoogleService-Info.plist */,
+				8C50A4FE1EF91B5700706869 /* InfoPlist.strings */,
 			);
 			path = ColorBlindTest;
 			sourceTree = "<group>";
@@ -329,7 +336,7 @@
 				TargetAttributes = {
 					8CF1D08C1EE1023A00DD39F1 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = C76C44PQR5;
+						DevelopmentTeam = 372P4TF38U;
 						ProvisioningStyle = Automatic;
 					};
 					8CF1D0A01EE1023A00DD39F1 = {
@@ -375,8 +382,10 @@
 				8C018A3C1EE140EA00769384 /* Localizable.strings in Resources */,
 				8CF1D09B1EE1023A00DD39F1 /* LaunchScreen.storyboard in Resources */,
 				8CF1D0981EE1023A00DD39F1 /* Assets.xcassets in Resources */,
+				8C50A4FC1EF91B5700706869 /* InfoPlist.strings in Resources */,
 				8C018A561EE14B9300769384 /* clock.json in Resources */,
 				8C018A581EE14B9300769384 /* moving_eye.json in Resources */,
+				8C6D1B141EF7BBD500DCACF1 /* GoogleService-Info.plist in Resources */,
 				8C018A591EE14B9300769384 /* play_and_like_it.json in Resources */,
 				4F3375FB1EE8F9DF004FA2E5 /* colorblindimage in Resources */,
 				8C018A571EE14B9300769384 /* infinite_rainbow.json in Resources */,
@@ -598,11 +607,20 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		8C50A4FE1EF91B5700706869 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C50A4FD1EF91B5700706869 /* Base */,
+				8C50A4FF1EF91B5B00706869 /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		8CF1D0941EE1023A00DD39F1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8CF1D0951EE1023A00DD39F1 /* Base */,
-				8C018A361EE1307F00769384 /* ko */,
+				8CA14CB71EFA0C4100638AEC /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -659,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -704,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -718,10 +736,11 @@
 			baseConfigurationReference = 6C6E6DE70DDEC78569A53B6F /* Pods-ColorBlindTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C76C44PQR5;
+				DEVELOPMENT_TEAM = 372P4TF38U;
 				INFOPLIST_FILE = ColorBlindTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DuckKite.ColorBlindTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duckkite.colorblindtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -732,10 +751,11 @@
 			baseConfigurationReference = 391D35DC37AD8544B719C7E0 /* Pods-ColorBlindTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C76C44PQR5;
+				DEVELOPMENT_TEAM = 372P4TF38U;
 				INFOPLIST_FILE = ColorBlindTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DuckKite.ColorBlindTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duckkite.colorblindtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

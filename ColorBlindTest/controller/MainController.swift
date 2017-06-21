@@ -9,6 +9,7 @@
 import UIKit
 import Lottie
 import SCLAlertView
+import GoogleMobileAds
 
 class MainController: UIViewController {
 
@@ -16,6 +17,7 @@ class MainController: UIViewController {
     @IBOutlet weak var testColor60: UIButton!
     @IBOutlet weak var testColorBlindness: UIButton!
     @IBOutlet weak var titleContainer: UIView!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     
     
@@ -23,6 +25,8 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        AppInfo.loadAD(bannerView: bannerView, viewController: self)
     }
     
     override func viewDidLayoutSubviews() {

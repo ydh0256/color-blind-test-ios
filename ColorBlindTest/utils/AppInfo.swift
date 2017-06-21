@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import GoogleMobileAds
 
 class AppInfo {
+    static let AD_UINIT_ID = "ca-app-pub-3037898101085814/5164999883"
     public enum GameMode: Int{
         case Infinite, SixtySec, ColorBlindTest
         func getName() -> String {
@@ -21,5 +23,14 @@ class AppInfo {
                 return NSLocalizedString("Color blind Test", comment: "")
             }
         }
+    }
+    
+    static func loadAD(bannerView:GADBannerView, viewController:UIViewController){
+        let request = GADRequest()
+//        request.testDevices = [kGADSimulatorID];
+        bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        bannerView.adUnitID = AD_UINIT_ID
+        bannerView.rootViewController = viewController
+        bannerView.load(request)
     }
 }

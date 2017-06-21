@@ -8,6 +8,7 @@
 
 import UIKit
 import SCLAlertView
+import GoogleMobileAds
 
 class ColorBlindViewController: UIViewController, TestState {
 
@@ -16,12 +17,14 @@ class ColorBlindViewController: UIViewController, TestState {
     @IBOutlet weak var colorBlindImage: UIImageView!
     @IBOutlet weak var step: UILabel!
     @IBOutlet weak var stepProgress: UIProgressView!
+    @IBOutlet weak var bannerView: GADBannerView!
+    
     
     var colorBlindTestModel: ColorBlindTestModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        AppInfo.loadAD(bannerView: bannerView, viewController: self)
         colorBlindTestModel = ColorBlindTestModel(self)
         colorBlindTestModel.prepare()
     }
@@ -49,6 +52,7 @@ class ColorBlindViewController: UIViewController, TestState {
     @IBAction func backToMain(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil);
     }
+    
     /*
     // MARK: - Navigation
 

@@ -9,6 +9,7 @@
 import UIKit
 import Lottie
 import SCLAlertView
+import GoogleMobileAds
 
 class ColorGameController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout ,ColorGameState {
     
@@ -17,6 +18,7 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var infoContainer: UIView!
     @IBOutlet weak var infoIcon: UIView!
     @IBOutlet weak var modeIconContainer: UIView!
+    @IBOutlet weak var bannerView: GADBannerView!
     var colorGameBrain: ColorGameBrain!
     
     @IBOutlet weak var titleName: UINavigationItem!
@@ -31,6 +33,8 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        AppInfo.loadAD(bannerView: bannerView, viewController: self)
         colorGameBrain = ColorGameBrain(self)
         gameTable.dataSource = self
         gameTable.delegate = self
@@ -114,7 +118,6 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
     
     
     func setGameData() {
-        NSLog("setGameData")
         stage.text = "Stage : \(colorGameBrain.curStage)\nBest : \(bestPoint)"
         gameTable.reloadData()
     }
