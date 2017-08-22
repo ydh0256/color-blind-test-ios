@@ -20,10 +20,12 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var modeIconContainer: UIView!
     @IBOutlet weak var bannerView: GADBannerView!
     var colorGameBrain: ColorGameBrain!
+    var interstitial: GADInterstitial!
     
     @IBOutlet weak var titleName: UINavigationItem!
     @IBOutlet weak var timer: UILabel!
     
+    let FULLSCREEN_ADS_COUNT = 8
     let startButton = LOTAnimationView(name: "play_and_like_it")
     var gameMode: AppInfo.GameMode!
     var gameTimer:Timer?
@@ -33,12 +35,15 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         AppInfo.loadAD(bannerView: bannerView, viewController: self)
         colorGameBrain = ColorGameBrain(self)
         gameTable.dataSource = self
         gameTable.delegate = self
         bestPoint = UserDefaults.standard.integer(forKey: gameMode.getName() + "Best")
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3037898101085814/5979249250")
+        let request = GADRequest()
+        interstitial.load(request)
+        
         prepare()
     }
     
@@ -127,6 +132,8 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
         if infoContainer.isHidden {
             infoContainer.isHidden = false
         }
+        let excuteCount: Int = UserDefaults.standard.integer(forKey: "gameCount")
+        UserDefaults.standard.set(excuteCount+1, forKey: "gameCount")
     }
     
     public func idle() {
@@ -144,14 +151,20 @@ class ColorGameController: UIViewController, UICollectionViewDataSource, UIColle
             SCLAlertView().showSuccess(NSLocalizedString("Congratulations!!", comment: ""), subTitle: NSLocalizedString("You have updated your record.", comment: ""))
             bestPoint = score
             UserDefaults.standard.set(bestPoint, forKey: gameMode.getName() + "Best")
+        } else {
+            let excuteCount: Int = UserDefaults.standard.integer(forKey: "gameCount")
+            if excuteCount >= FULLSCREEN_ADS_COUNT && interstitial.isReady{
+                interstitial.present(fromRootViewController: self)
+                UserDefaults.standard.set(0, forKey: "gameCount")
+            }
         }
         
         self.gameTimer?.invalidate();
-        self.prepare()
         self.count = 60
         self.timer.text = ""
         self.gameTimer = nil
         stage.text = ""
+        self.prepare()
     }
     
     func infoIconTapped(sender: UITapGestureRecognizer) {
